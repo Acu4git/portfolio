@@ -17,13 +17,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
-    /* Path alias */
-    "baseUrl": "." ,
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-    }
   },
   "include": ["vite.config.ts"]
 }
