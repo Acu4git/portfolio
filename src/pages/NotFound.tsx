@@ -9,10 +9,12 @@ const NotFound = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setRotation((prevRotation: number) => prevRotation + 10);
+      setRotation((prevRotation: number) => prevRotation + 5);
     }, 100);
 
-    return clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
   return (
     <>
@@ -21,10 +23,11 @@ const NotFound = () => {
           src={myLogo}
           className="w-32 h-32 object-cover"
           style={{ rotate: rotation }}
-          // transition={{ duration: 0.1 }}
+          transition={{ duration: 0.1 }}
         ></motion.img>
         <h2 className="font-bold text-5xl text-gray-700">404 Not Found</h2>
         <p>'{location.pathname}' is not exist.</p>
+        <p>(SSRしていないので，ステータスコードは404になってません．)</p>
       </div>
     </>
   );
