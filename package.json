@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://acu4git.github.io/portfolio/",
+  "homepage": "https://acu4git.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +12,7 @@
     "rm": "rm -rf docs",
     "mv": "mv dist docs",
     "git": "git add . && git commit && git push origin main",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "npm run rm && npm run mv && npm run git"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
