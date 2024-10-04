@@ -7,7 +7,7 @@ import Works from "@/pages/Works";
 const AppRouter = () => {
   return (
     <>
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter basename="portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
