@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Acu4git.github.io/portfolio/",
+  "homepage": "https://Acu4git.github.io/portfolio.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "rm": "rm -rf dist",
+    "rm": "rm -rf docs",
     "mv": "mv dist docs",
     "git": "git add . && git commit && git push origin main",
     "deploy": "npm run rm && npm run build && npm run mv && npm run git"
