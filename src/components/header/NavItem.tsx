@@ -11,12 +11,12 @@ const NavItem: FC<{ path: string; icon: IconDefinition; title: string }> = ({
   icon,
   title,
 }) => {
-  const href = `/${path}`;
+  // const href = `${path}`;
   return (
     <>
       <NavigationMenuItem className="hover:bg-slate-800">
         <NavigationMenuLink
-          href={href}
+          href={path}
           className="h-20 flex items-center gap-2"
         >
           <FontAwesomeIcon icon={icon} />
