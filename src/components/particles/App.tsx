@@ -35,11 +35,7 @@ const App: React.FC = () => {
     );
   }
 
-  return (
-    <>
-      <AppRouter />
-    </>
-  );
+  return <></>;
 };
 
 export default App;
