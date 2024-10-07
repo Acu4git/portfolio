@@ -3,12 +3,13 @@ import Home from "@/pages/Home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Secret from "@/pages/Secret";
 import Works from "@/pages/Works";
-import BASE_URL from "./basename";
+
+const basename = import.meta.env.VITE_BASENAME || "/";
 
 const AppRouter = () => {
   return (
     <>
-      <HashRouter basename={BASE_URL}>
+      <HashRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
