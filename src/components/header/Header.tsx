@@ -21,8 +21,8 @@ const Header = () => {
       </NavigationMenu>
       <NavigationMenu className="font-bold text-white text-4xl ">
         <NavigationMenuList className="gap-3">
-          <NavItem path="/#/" icon={faHouse} title="Home" />
-          <NavItem path="/#/works" icon={faCode} title="Works" />
+          <NavItem path="/" icon={faHouse} title="Home" />
+          <NavItem path="/works" icon={faCode} title="Works" />
         </NavigationMenuList>
       </NavigationMenu>
     </header>
