@@ -4,12 +4,12 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Secret from "@/pages/Secret";
 import Works from "@/pages/Works";
 
-const basename = import.meta.env.VITE_BASENAME || "/";
+// const basename = import.meta.env.VITE_BASENAME || "/";
 
 const AppRouter = () => {
   return (
     <>
-      <HashRouter basename={basename}>
+      <HashRouter basename="/portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
